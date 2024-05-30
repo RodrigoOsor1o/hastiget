@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/Hastiget-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style4.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="cabecera dis-flex"> 
+        <img class="logo-head" src="image/hastiget-red.svg" alt="">
+        <div class="anclas">   
+            <a class="volver-ancla poppins-medium" href="index3.html">Regresa</a> 
+            <a class="volver-ancla poppins-medium" href="index.html">Volver al sitio</a> 
+        </div>
+    </header>  
+    <section>
+        <table class="table-quest">
+            <thead >
+                <tr class="fila-head">
+                    <th class="table-head poppins-bold" colspan="5" >Queremos conocerte mejor:</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="fila-1">
+                    <td class="col-fil1 poppins-medium bg-red1-1">
+                        Sexo
+                    </td>
+                    <td class="col-fil1 poppins-medium bg-red2-2">
+                        Ingresa una opinion para el sitio
+                    </td>
+                    <td class="col-fil1 poppins-medium bg-red1-1">
+                        ¿De que parte eres?
+                    </td>
+                    <td class="col-fil1 poppins-medium bg-red2-2">
+                        ¿Como conociste nuestra pagina?
+                    </td>
+                    <td class="col-fil1 poppins-medium bg-red1-1">
+                        ¿Nuestro contenido te pareció util?
+                    </td>
+                </tr>
+                <tr class="fila-2 poppins-regular">
+                    <form action="https://formspree.io/f/mleqkvlp" method="post">
+                    <td class="col-fil2 bg-red1-1"> 
+							<div><input value="hombre" name="sexo" id="man" type="radio"><label for="man">Hombre</label></div>
+							<div><input value="mujer" name="sexo" id="girl" type="radio"><label for="girl">Mujer</label></div>
+                            <div><input value="none" name="sexo" id="not" type="radio"><label for="not">Prefiero no decirlo</label></div>
+                    </td>
+                    <td class="col-fil2 bg-red2-2">
+                        <div><textarea class="opinion" name="Opinion"></textarea></div>
+                    </td>
+                    <td class="col-fil2 bg-red1-1">
+							<div><input value="Asia" name="ubication" id="Asia" type="radio"><label for="man">Asia</label></div>
+							<div><input value="America" name="ubication" id="America" type="radio"><label for="girl">America</label></div>
+							<div><input value="Oceania" name="ubication" id="Oceania" type="radio"><label for="not">Oceania</label></div>
+							<div><input value="Africa" name="ubication" id="Africa" type="radio"><label for="not">Africa</label></div>
+							<div><input value="Antartida" name="ubication" id="Antartida" type="radio"><label for="not">Antartida</label></div>
+                    </td class="col-fil2">
+                    <td class="col-fil2 bg-red2-2">
+							<div><input value="Instagram" id="insta" type="checkbox"><label for="insta">Instagram</label></div>
+							<div><input value="Facebook" id="face" type="checkbox"><label for="face">Facebook</label></div>
+							<div><input value="Tiktok" id="tiktok" type="checkbox"><label for="tiktok">TikTok</label></div>
+							<div><input value="Amigos" id="friend" type="checkbox"><label for="friend">Amigos</label></div>
+                            <div><input value="Otros" id="other" type="checkbox"><label for="other">Otro</label></div>
+                    </td>
+                    <td class="col-fil2 bg-red1-1">
+							<div><input value="Me fue muy util" name="Utilidad" id="muy-util" type="radio"><label for="muy-util">Me fue muy util</label></div>
+							<div><input value="Me fue algo util" name="Utilidad" id="util" type="radio"><label for="util">Me fue algo util</label></div>
+							<div><input value="No fue para nada util" name="Utilidad" id="no-util" type="radio"><label for="no-util">No fue para nada util</label></div>
+                    </td>
+                    
+                </tr>
+                <tr class="fila-3">
+                    <td class="col-fil3 poppins-bold" colspan="5"><button class="button-submit" type="submit"> Enviar </button></td>
+                </tr>
+            </form>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    </section>
+    <footer></footer>
+</body>
+</html>

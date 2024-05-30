@@ -1,0 +1,200 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+  --color-r:#C70039;
+  --color-b:#ffffff;
+  --color-gc:#d4d4d4;
+  --color-blue-dark:#08425C;
+  --color-blue-light:#0798E1;
+  --color-black:#000000;
+  --color-graylight:#858585;
+  --color-red-dark:#860000;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body, h1, h2, h3, h4, p,
+figure, blockquote, dl, dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1, h2, h3, h4,
+button, input, label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1, h2,
+h3, h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button,
+textarea, select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+body{
+    padding: 0rem;
+    margin: 0rem;
+    background-color: #000000;
+}
+
+.cabecera{
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 1rem;
+    display: flex;
+    width: 100%;
+    background: transparent;
+    /* background-image: linear-gradient(to button, #C70039, #ffffff00); */
+    backdrop-filter: blur(0.4rem);
+}
+
+.cont-head{
+    width: 15%;
+}
+
+.ancla{
+    color: var(--color-r);
+    padding: 0.7rem 1.5rem;
+    background-color: #86000000;
+    margin: 0rem 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 0.4rem 1rem;
+    transition: 0.3s ease-in-out;
+    /* color: var(--color-r); */
+}
+
+.ancla:hover{
+    color: var(--color-b);
+    background-color: #c7003870;
+}
+
+.section-1{
+    margin: 9rem 0rem 0rem 0rem;
+    padding: 0rem 12rem;
+}
+
+.section{
+    padding: 0rem 12rem;
+}
+
+h1{
+    font-size: 5rem;
+    color: var(--color-b);
+}
+
+h2{
+    font-size: 3rem;
+    color: var(--color-r);
+}
+
+h3{
+    font-size: 2rem;
+    color: var(--color-b);
+}
+
+h4{
+    font-size: 1.5rem;
+    color: var(--color-b);
+}
+
+p{
+    font-size: 0.9rem;
+    color: var(--color-b);
+}
+
+li{
+    font-size: 0.9rem;
+    color: var(--color-b);
+}
+
+.logo{  
+    float: left;
+	margin:0rem 0rem 0rem 0.7rem;
+	/* width: 20%; */
+}
+
+.navegador{
+    margin: 2rem 0rem;
+    display: block;
+    align-items: center;
+    margin-left: auto;
+}
+
+.poppins-bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+  
+.poppins-regular {
+   font-family: "Poppins", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+  
+.poppins-medium {
+   font-family: "Poppins", sans-serif;
+   font-weight: 500;
+   font-style: normal;
+}
+
+.foot{
+    padding: 4rem;
+    text-align: center;
+}
+
+.remark{
+    color: var(--color-r);
+}
+
