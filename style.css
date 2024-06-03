@@ -17,6 +17,7 @@ html {
 	--color-black:#000000;
 	--color-graylight:#858585;
 	--color-red-dark:#860000;
+	--padding-container-mobile: 0 1.6rem;
 }
 
 
@@ -74,6 +75,13 @@ textarea:not([rows]) {
   scroll-margin-block: 5ex;
 }
 
+.container {
+	padding: var(--padding-container-mobile);
+	margin: 0 auto;
+	max-width: 1280px;
+	width: 100%;
+  }
+  
 .banner{
 	width: 100rem;
 	
@@ -122,6 +130,9 @@ textarea:not([rows]) {
 	margin-left: auto;
 }
 
+/* .auto-1{
+	width: 50%;
+} */
 .seleccion{
 	background-color: #00000000;
 	width: 17%;
@@ -150,8 +161,8 @@ textarea:not([rows]) {
 
 .sec-2{
 /*	background-color: blue;*/
-	display: flex;
-	margin: 3rem 0rem 0rem 5rem;
+display: grid;
+grid-template-columns: repeat(2, 1fr);
 }
 
 .sec-3{
@@ -321,8 +332,8 @@ textarea:not([rows]) {
 }
 
 .prinsep{
-	padding: 0rem 4rem 0rem 0rem;
-	margin: 0rem 2rem 0rem 0rem;
+	padding: 0rem 2rem ;
+	margin: 0rem 2rem ;
 	
 }
 
@@ -506,3 +517,9 @@ textarea:not([rows]) {
 .bg-blue{
 	background-image: linear-gradient(to bottom, #a9d0de, #a9d0de, #507f90  );
 } */
+
+@media (max-width: 900px) {
+	.sec-2 {
+		grid-template-columns: 1fr; /* 1 columna en pantallas pequeñas */
+	}
+}
