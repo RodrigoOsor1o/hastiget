@@ -147,6 +147,7 @@ display: flex;
 .anclas:hover{
 	background-color: var(--color-r);
 	color: var(--color-b);
+	padding: .5rem .5rem;
 }
 
 .sec-1{
@@ -215,6 +216,11 @@ grid-template-columns: repeat(2, 1fr);
 	object-fit: contain; /* Ajusta la imagen para cubrir el contenedor */
 }
 
+.wrapper-img-car-sec-7 {
+	overflow: hidden;
+	height: 450px;
+}
+
 .sep-bg{
 	padding: 7rem;
 	background-image: linear-gradient(to bottom, #ffffff,#000000);
@@ -237,7 +243,6 @@ grid-template-columns: repeat(2, 1fr);
 
 .sec-7{
 	text-align: justify;
-	padding: 2rem 7rem 0rem 0rem;
 	background-color: var(--color-black);
 	display:flex;
 	margin: 0;
@@ -550,6 +555,10 @@ display: none;
 	.sec-4 {
 		display: grid;
 		row-gap: 30px;
+	}
+
+	.sec-7 {
+		display: grid;
 	}
 
 
