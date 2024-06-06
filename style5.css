@@ -104,24 +104,25 @@ body{
 
 .ancla{
     color: var(--color-r);
-    padding: 0.7rem 1.5rem;
+    /* padding: 0.7rem 1.5rem; */
     background-color: #86000000;
-    margin: 0rem 0.5rem;
+    margin: 0rem 0.9rem;
     text-decoration: none;
     font-size: 1.2rem;
     border-radius: 0.4rem 1rem;
-    transition: 0.3s ease-in-out;
+    transition: 0.3s ease-out;
     /* color: var(--color-r); */
 }
 
 .ancla:hover{
+    padding: 0.7rem 1.5rem;
     color: var(--color-b);
     background-color: #c7003870;
 }
 
 .section-1{
     margin: 9rem 0rem 0rem 0rem;
-    padding: 0rem 12rem;
+    padding: 0rem 6rem;
 }
 
 .section{
@@ -198,6 +199,18 @@ li{
     color: var(--color-r);
 }
 
+.seleccion{
+	background-color: #00000000;
+
+}
+
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    /* border: 1px solid #ccc; */
+}
+
 @media (max-width: 950px){
     .section {
         padding: 0rem 4rem;
@@ -209,6 +222,10 @@ li{
         font-size: 4rem;
 
     }
+
+    .section-1{
+      margin-top: 10rem;
+    }
 }
 
 @media (max-width: 450px) {
@@ -216,4 +233,10 @@ li{
         font-size: 2.5rem;
 
     }
+
+    .section-1{
+      margin-top: 13rem;
+    }
+
+
 }
