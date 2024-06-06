@@ -198,3 +198,22 @@ li{
     color: var(--color-r);
 }
 
+@media (max-width: 950px){
+    .section {
+        padding: 0rem 4rem;
+    }
+    .section-1 {
+        padding: 0rem 4rem;
+    }
+    h1{
+        font-size: 4rem;
+
+    }
+}
+
+@media (max-width: 450px) {
+    h1{
+        font-size: 2.5rem;
+
+    }
+}
