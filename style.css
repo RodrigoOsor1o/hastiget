@@ -673,4 +673,12 @@ display: none;
 	.cont-sec11 {
 		margin: auto;
 	}
+
+	.font-4rem{
+		font-size: 2rem;
+	}
+
+	.ti-1{
+		font-size: 5rem;
+	}
 }
